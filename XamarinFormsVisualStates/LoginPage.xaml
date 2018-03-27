@@ -4,5 +4,15 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="XamarinFormsVisualStates.LoginPage">
     <ContentPage.Content>
+        <StackLayout
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+            <Entry
+                Placeholder="Username or e-mail" />
+            <Entry
+                Placeholder="Password" />
+            <Button
+                Text="Sign in" />
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

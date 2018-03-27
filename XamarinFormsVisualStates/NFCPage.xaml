@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XamarinFormsVisualStates.NFCPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            
+            <!-- STYLES -->
+            <Style x:Key="NFCIconStyle" TargetType="Image">
+                <Setter Property="Aspect" Value="AspectFit" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+        
+    <!-- Images -->
+    <Grid
+        Grid.Row="1"
+        WidthRequest="160"
+        HeightRequest="160"
+        Margin="15">
+        <Image x:Name="nfcUnavailableImage"
+            Source="icon_nfc_area"
+            Style="{StaticResource NFCIconStyle}" />
+
+        <Image x:Name="nfcReadyImage"
+            Source="icon_nfc_area_ready"
+            Style="{StaticResource NFCIconStyle}" />
+
+        <Image x:Name="nfcJustNFCImage"
+            Source="icon_nfc_area_justnfc"
+            Style="{StaticResource NFCIconStyle}"
+            WidthRequest="66"
+            HeightRequest="66" />
+
+        <Image x:Name="nfcJustOKImage"
+            Source="icon_nfc_area_justok"
+            Style="{StaticResource NFCIconStyle}"
+            WidthRequest="66"
+            HeightRequest="66" />
+    </Grid>
+</ContentPage>

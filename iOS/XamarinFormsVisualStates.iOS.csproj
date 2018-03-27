@@ -122,6 +122,20 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\Resources\icon_nfc_area_justnfc.png">
+      <Link>Resources\icon_nfc_area_justnfc.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Resources\icon_nfc_area_justok.png">
+      <Link>Resources\icon_nfc_area_justok.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Resources\icon_nfc_area_ready.png">
+      <Link>Resources\icon_nfc_area_ready.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Resources\icon_nfc_area.png">
+      <Link>Resources\icon_nfc_area.png</Link>
+    </BundleResource>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets')" />
 </Project>

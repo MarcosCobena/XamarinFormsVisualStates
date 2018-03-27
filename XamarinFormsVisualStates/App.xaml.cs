@@ -8,7 +8,7 @@ namespace XamarinFormsVisualStates
         {
             InitializeComponent();
 
-            MainPage = new LoginPage();
+            MainPage = new NFCPage();
         }
 
         protected override void OnStart()
